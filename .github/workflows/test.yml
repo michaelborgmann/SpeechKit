@@ -1,0 +1,28 @@
+name: Run Tests (iOS)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: macos-15
+    name: Unit Tests on iOS Simulator
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Select Xcode 15.3+ (Swift 5.9+)
+      run: |
+        sudo xcode-select -s /Applications/Xcode.app
+        xcodebuild -version
+
+    - name: Build and Run Tests
+      run: |
+        xcodebuild test \
+          -scheme SpeechKit \
+          -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' \
+          -sdk iphonesimulator \
+        | xcpretty && exit ${PIPESTATUS[0]}

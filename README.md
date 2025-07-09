@@ -1,9 +1,11 @@
 # SpeechKit
 
-[![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%206.0-orange.svg?logo=swift)](https://swift.org)
-[![iOS](https://img.shields.io/badge/iOS-17%2B-blue.svg?logo=apple)](https://developer.apple.com/documentation)
+![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%206.0-orange.svg?logo=swift)
+![iOS](https://img.shields.io/badge/iOS-17%2B-blue.svg?logo=apple)
+![SPM](https://img.shields.io/badge/SPM-compatible-brightgreen?logo=swift)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![Version](https://img.shields.io/github/v/tag/michaelborgmann/SpeechKit?label=release)](https://github.com/michaelborgmann/SpeechKit/releases)
+![Version](https://img.shields.io/github/v/tag/michaelborgmann/SpeechKit?label=release)
+![Tests](https://github.com/michaelborgmann/SpeechKit/actions/workflows/test.yml/badge.svg)
 
 🎙 A lightweight Swift package for speech recognition and synthesis on iOS.  
 Built for modern Swift apps, tested with Swift Testing, and ready for SwiftUI.
